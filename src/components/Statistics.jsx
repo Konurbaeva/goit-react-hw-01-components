@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { generateRandomHexColor } from 'utils/generateRandomHexColor';
 
 
-const generateRandomHexColor = () =>
-  `#${Math.floor(Math.random() * 0xffffff).toString(16)}`;
 
   export const SectionUl = styled.ul`
   display:flex; 
@@ -14,8 +13,6 @@ const generateRandomHexColor = () =>
       list-style: none;
   }
   `
-
-
 export const Statistics = ({title, stats}) => {
     return (<>
     <section className="statistics">

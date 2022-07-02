@@ -14,6 +14,10 @@ import { generateRandomHexColor } from 'utils/generateRandomHexColor';
 
 export const SectionLi = styled.li`
   background-color: ${generateRandomHexColor};
+  width: 50%;
+  & {
+    list-style: none;
+  }
 `;
 
 export const Statistics = ({ title, stats }) => {

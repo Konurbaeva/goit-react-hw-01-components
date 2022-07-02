@@ -2,8 +2,6 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { generateRandomHexColor } from 'utils/generateRandomHexColor';
 
-
-
   export const SectionUl = styled.ul`
   display:flex; 
   padding: 20px;
@@ -13,16 +11,21 @@ import { generateRandomHexColor } from 'utils/generateRandomHexColor';
       list-style: none;
   }
   `
-export const Statistics = ({title, stats}) => {
+
+ export const SectionLi = styled.li`
+  background-color:${generateRandomHexColor}
+  `
+
+export const Statistics = ({ title, stats }) => {
     return (<>
     <section className="statistics">
  {title && <h2 className="title">Upload stats</h2>}
   <SectionUl className="stat-list">
  {stats.map(({id, label, percentage}) => (
-<li className="item" key={id} style= {{backgroundColor: generateRandomHexColor()}}>
+<SectionLi className="item" key={id}>
 <span className="label">{label}</span>
 <span className="percentage">{percentage}</span>
-</li>
+</SectionLi>
  ))}
   </SectionUl>
 </section>

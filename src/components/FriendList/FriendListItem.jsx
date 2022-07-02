@@ -6,13 +6,16 @@ import styled from 'styled-components';
 export const ListItem = styled.li`
   color: ${props => (props.isOnline ? 'green' : 'red')};
   .status {
-    position: absolute;
+    // position: absolute;
     background-color: #ff0000;
     border-radius: 50%;
     width: 1%;
     height: 1%;
     border: #fff 3px solid;
     bottom: 3px;
+  }
+  & {
+    list-style: none;
   }
 `;
 

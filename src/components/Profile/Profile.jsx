@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { ProfileItem } from './ProfileItem';
-import { Stats } from './Stats';
-import { Card } from './ui/card';
+import { Stats } from '../Statistics/Stats';
+import { Card } from '../ui/card';
 
 
 export const Profile= ({ user, stats})=>{

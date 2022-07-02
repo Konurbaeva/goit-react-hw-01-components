@@ -7,9 +7,9 @@ import {
   TableHeadRow,
   TableHeader,
   TableBodyText,
-} from '../components/ui/table'
+} from '../ui/table'
 
-import { Container } from './ui/Container';
+import { Container } from '../ui/Container';
 
 export const TransactionHistory = ({items}) => {
   return (

@@ -2,11 +2,11 @@ import { Card } from 'components/ui/card';
 import styled from 'styled-components';
 
 export const Span = styled.span`
-  border: ${props => (props.isOnline ? '#33cc33' : '#ff0000')} 5px solid;
-  border-radius: 50%;
+  border: ${props => (props.isOnline ? '#35bb23' : '#ff0000')} 10px solid;
+  margin-right: 10px;
   width: 20%;
   height: 20%;
-  bottom: 3px;
+  border-radius: 50%;
 `;
 
 export const FriendListItem = ({ friend }) => {

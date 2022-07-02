@@ -24,19 +24,3 @@ export const FriendListItem = ({ friend }) => {
     </>
   );
 };
-
-// export const FriendListItem = ({ friend }) => {
-//   const { name, isOnline, avatar, id } = friend;
-
-//   return (
-//     <>
-//       <Card>
-//         <ListItem className="item" key={id}>
-//           <span className="status" isOnline={isOnline}></span>
-//           <img className="avatar" src={avatar} alt="User avatar" width="48" />
-//         </ListItem>
-//         <p>{name}</p>
-//       </Card>
-//     </>
-//   );
-// };

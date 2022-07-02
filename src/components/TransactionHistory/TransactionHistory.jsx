@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { 
+import {
   Table,
   TableHead,
   TableRow,
@@ -7,43 +7,42 @@ import {
   TableHeadRow,
   TableHeader,
   TableBodyText,
-} from '../ui/table'
+} from '../ui/table';
 
 import { Container } from '../ui/Container';
 
-export const TransactionHistory = ({items}) => {
+export const TransactionHistory = ({ items }) => {
   return (
     <Container>
-    <Table>
+      <Table>
         <TableHead>
-            <TableHeadRow>
-                <TableHeader>type</TableHeader>
-                <TableHeader>amount</TableHeader>
-                <TableHeader>currency</TableHeader>
-            </TableHeadRow>
+          <TableHeadRow>
+            <TableHeader>type</TableHeader>
+            <TableHeader>amount</TableHeader>
+            <TableHeader>currency</TableHeader>
+          </TableHeadRow>
         </TableHead>
         <TableBody>
-            {items.map(({ id, type, amount, currency }) => (
-                <TableRow key={id}>
-                    <TableBodyText>{type}</TableBodyText>
-                    <TableBodyText>{amount}</TableBodyText>
-                    <TableBodyText>{currency}</TableBodyText>
-                </TableRow>
-            ))}
+          {items.map(({ id, type, amount, currency }) => (
+            <TableRow key={id}>
+              <TableBodyText>{type}</TableBodyText>
+              <TableBodyText>{amount}</TableBodyText>
+              <TableBodyText>{currency}</TableBodyText>
+            </TableRow>
+          ))}
         </TableBody>
-    </Table>
-       </Container>
-)
-}
-
+      </Table>
+    </Container>
+  );
+};
 
 TransactionHistory.propTypes = {
-    items: PropTypes.arrayOf(
-        PropTypes.shape({
-            id: PropTypes.string, 
-            type:PropTypes.string,
-            amount:PropTypes.string, 
-            currency: PropTypes.string
-        })
-    )
-}
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      type: PropTypes.string,
+      amount: PropTypes.string,
+      currency: PropTypes.string,
+    })
+  ),
+};

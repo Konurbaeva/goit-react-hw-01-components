@@ -8,6 +8,6 @@ import { theme } from 'styleConfig/theme';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <ThemeProvider theme={theme}>
-    <App />
+        <App />
     </ThemeProvider>
 );

@@ -1,3 +1,4 @@
+import { Card } from 'components/ui/card';
 import styled from 'styled-components';
 
 // В зависимости от пропа isOnline, должен меняться цвет фона span.status.
@@ -11,11 +12,13 @@ export const FriendListItem = ({ friend }) => {
 
   return (
     <>
-      <ListItem className="item" key={id} isOnline={isOnline}>
-        <span className="status"></span>
-        <img className="avatar" src={avatar} alt="User avatar" width="48" />
-      </ListItem>
-      <p>{name}</p>
+      <Card>
+        <ListItem className="item" key={id} isOnline={isOnline}>
+          <span className="status"></span>
+          <img className="avatar" src={avatar} alt="User avatar" width="48" />
+        </ListItem>
+        <p>{name}</p>
+      </Card>
     </>
   );
 };

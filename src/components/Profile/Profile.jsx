@@ -6,10 +6,12 @@ import { Card } from '../ui/card';
 export const Profile = ({ user, stats }) => {
   return (
     <>
-      <Card>
-        <ProfileItem user={user} />
-        <Stats stats={stats} />
-      </Card>
+      <div>
+        <Card>
+          <ProfileItem user={user} />
+          <Stats stats={stats} />
+        </Card>
+      </div>
     </>
   );
 };

@@ -4,11 +4,11 @@ import styled from 'styled-components';
 export const Span = styled.span`
   /* border: ${props => (props.isOnline ? '#35bb23' : '#ff0000')} 10px solid; */
   border: ${props => (props.isOnline ? '#35bb23' : '#ff0000')} 5px solid;
-  margin-right: 10px;
+  // margin-right: 10px;
   width: 10%;
   height: 10%;
   border-radius: 50%;
-  color: pink;
+  margin: 10px;
 `;
 
 export const ListItem = styled.li`

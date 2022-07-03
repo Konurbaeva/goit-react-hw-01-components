@@ -13,7 +13,7 @@ export const SectionUl = styled.ul`
 export const SectionLi = styled.li`
   background-color: ${generateRandomHexColor};
   width: 50%;
-  height: 100px;
+  height: 70px;
 `;
 
 export const Statistics = ({ title, stats }) => {

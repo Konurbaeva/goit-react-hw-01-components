@@ -3,10 +3,12 @@ import styled from 'styled-components';
 
 export const Span = styled.span`
   border: ${props => (props.isOnline ? '#35bb23' : '#ff0000')} 5px solid;
-  width: 10%;
-  height: 10%;
+  //width: 10%;
+  // height: 10%;
   border-radius: 50%;
   margin: 10px;
+  stroke-width: 59;
+  stroke-linecap: round;
 `;
 
 export const ListItem = styled.li`

@@ -2,19 +2,21 @@ import { Card } from 'components/ui/card';
 import styled from 'styled-components';
 
 export const Span = styled.span`
-  border: ${props => (props.isOnline ? '#35bb23' : '#ff0000')} 5px solid;
-  //width: 10%;
-  // height: 10%;
+  background-color: ${props => (props.isOnline ? '#35bb23' : '#ff0000')};
+  position: relative;
+  top: -10px;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  margin: 10px;
-  stroke-width: 59;
-  stroke-linecap: round;
 `;
 
 export const ListItem = styled.li`
   height: 60px;
   margin-top: 10px;
+  margin-bottom: 10px;
   margin-left: 8px;
+  margin-right: 10px;
   vertical-align: center;
 `;
 

@@ -4,7 +4,6 @@ export const Card = styled.div`
 padding: 10px;
 margin: 0 auto;
 margin-top: 10px;
-background-color:pink;
 transition: 0.3s;
 width: 20%;
 align-items: center;

@@ -20,8 +20,8 @@ export const Statistics = ({ title, stats }) => {
   return (
     <>
       <section className="statistics">
-        {title && <h2 className="title">Upload stats</h2>}
         <SectionUl className="stat-list">
+          {title && <h2 className="title">Upload stats</h2>}
           {stats.map(({ id, label, percentage }) => (
             <SectionLi className="item" key={id}>
               <span className="label">{label}</span>
